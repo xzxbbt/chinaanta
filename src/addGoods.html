@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+  </head>
+  <body>
+    <form action="php/saveGoods.php" method="post">
+      商品编号：<input type="text" name="goodsId" /><br />
+      商品名称：<input type="text" name="goodsName" /><br />
+      <!-- 商品类型：<input type="text" name="goodsType" /><br/> -->
+      商品类型：<select id="typeId" name="typeId"></select
+      ><br />
+      商品价格：<input type="text" name="goodsPrice" /><br />
+      备用1商品原始价格：<input type="text" name="beiyong1" /><br />
+      商品数量：<input type="text" name="goodsCount" /><br />
+      商品描述：<input type="text" name="goodsDesc" /><br />
+      商品图片：<input type="text" name="goodsImg" /><br />
+      备用2：商品图片：a2<input type="text" name="beiyong2" /><br />
+      备用3：商品图片：a3<input type="text" name="beiyong3" /><br />
+      备用4：img1<input type="text" name="beiyong4" /><br />
+      备用5：img2<input type="text" name="beiyong5" /><br />
+      备用6：img3<input type="text" name="beiyong6" /><br />
+      备用7：img4<input type="text" name="beiyong7" /><br />
+      备用8：img5<input type="text" name="beiyong8" /><br />
+      备用9：尺码<input type="text" name="beiyong9" /><br />
+      备用10:数量<input type="text" name="beiyong10" /><br />
+      备用11：<input type="text" name="beiyong11" /><br />
+      备用12：<input type="text" name="beiyong12" /><br />
+      备用13：<input type="text" name="beiyong13" /><br />
+      <input type="submit" value="保存商品" />
+    </form>
+  </body>
+</html>
+<script src="js/jquery/jquery-3.2.1.min.js"></script>
+<script>
+  $(function () {
+    $.get("php/getGoodsType.php", function (data) {
+      let objs = JSON.parse(data);
+      let htmlStr = "";
+      objs.forEach(function (item) {
+        htmlStr += `<option value="${item.typeId}" >${item.goodsType}</option>`;
+      });
+      $("#typeId").html(htmlStr);
+    });
+  });
+</script>

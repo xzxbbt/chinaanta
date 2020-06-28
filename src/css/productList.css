@@ -1,0 +1,239 @@
+.main-container{
+    width: 100%;
+    min-height: calc(100vh - 320px);
+    position: relative;
+    overflow: hidden;
+}
+.list-container{
+    padding-bottom: 50px;
+}
+.selector-box{
+    margin-left: 60px;
+    width: 260px;
+    float: left;
+}
+.list-wrp{
+    margin-left: 340px;
+}
+.list-body{
+    padding-top: 20px;
+}
+.selector-top{
+    height: 80px;
+    line-height: 80px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+    margin-top: 7px;
+}
+.selector-top span{
+font-size: 30px;
+line-height: 80px;
+}
+.selector-top a{
+    display: block;
+    width: 70px;
+    height: 36px;
+    float: right;
+    text-align: center;
+    line-height: 36px;
+    margin-top: 22px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #666666;
+    border: 1px solid #adadad;
+}
+/* selector-item */
+.selector-item{
+    padding-bottom: 20px;
+}
+/* selector-item close */
+.selector-cate{
+    width: 100%;
+    height: 25px;
+    padding:20px 0;
+    border-top: 1px solid #ccc;
+    line-height: 25px;
+    color: #333;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.selector-cate .iconfont{
+    display: block;
+    float: right;
+    font-weight:500 ;
+    font-size: 22px;
+}
+.selector-tag li{
+    padding: 5px 0;
+}
+/* list-wrp */
+.list-top-l{
+    padding-left: 20px;
+    width: 658px;
+    float: left;
+}
+.cate-title{
+    height: 75px;
+    line-height: 75px;
+    font-size: 35px;
+    font-weight: 700;
+}
+.cate-title span{
+    margin-left: 10px;
+    font-style: normal;
+    font-size: 25px;
+    color: #999;
+    font-weight: 400;
+    vertical-align: baseline;
+}
+/* .list-top-r */
+.list-top-r{
+    padding-right: 10px;
+    max-width: 350px;
+    text-align: right;
+    float: right;
+}
+.filter-order{
+    margin: 17px 0;
+    border-radius: 3px;
+    border: 1px rgb(196, 195, 195) solid;
+}
+.filter-order a{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.filter-order .iconfont{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+/* list-pagination */
+.page-select{
+    display: inline-block;
+    /* margin: 17px 0; */
+    border-radius: 3px;
+    border: 1px rgb(196, 195, 195) solid;
+}
+.page-select a{
+    display: inline-block;
+    width: 30px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+}
+.page-select .iconfont{
+    display: inline-block;
+    width: 25px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+}
+.list-pagination span{
+    color: #ccc;
+}
+.list-pagination>a{
+    display: inline-block;
+    height: 36px;
+    width: 36px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 36px;
+    border: 1px rgb(196, 195, 195) solid;
+}
+
+
+
+
+
+
+.goodsBox{
+    float: left;
+    background-color: rgb(255, 255, 255);
+}
+.goodsBox>li{
+    width: 247px;
+    height: 280px;
+    margin:0 5px 8px 0 ;
+    float: left;
+    position: relative;
+}
+.Goods-main{
+    height: 280px;
+    background-color:white;
+    padding: 15px;
+    /* border: 1px solid #ddd; */
+}
+.goodsBox>li .Goods-main>img{
+    width: 220px;
+}
+.Goods-main h3{
+    width: 220px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.Goods-img{
+    display: none;
+    height: 30px;
+    margin: 3px 0;
+}
+.Goods-img img{
+    display: block;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin:0 3px;
+    border: 1px solid #ccc;
+}
+.Goods-img span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin:0 3px;
+    text-align: center;
+    line-height: 30px;
+    color: #ccc;
+    border: 1px solid #ccc;
+}
+.Goods-main p{
+    margin-top: 5px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.Goods-main p>span{
+    font-size: 12px;
+    display: none;
+    color: #a0a0a0;
+     text-decoration:line-through; 
+}
+.Goods-main:hover{
+    height: 300px;
+    position: absolute;
+    top: -25px;
+    /* transform: scaleY(-30px); */
+    z-index: 1;
+    box-shadow: 0 0 9px #dbdbdb;
+}
+
+.Goods-main:hover .Goods-img{
+    display: block;
+}
+.Goods-main:hover p>span{
+    display:inline-block;
+}
+
+
+/* .list-bottom */
+.list-bottom{
+    margin: 30px 0;
+    float: right;
+}

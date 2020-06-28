@@ -1,0 +1,59 @@
+.contact-banner{
+    width: 100%;
+    height: 460px;
+    position: relative;
+    overflow: hidden;
+}
+.contact-banner img{
+    height: 460px;
+    position: absolute;
+    left: calc( 50% - 960px );
+}
+.text-inner{
+    width: 400px;
+    position: absolute;
+    left: calc( 50% - 200px );
+    text-align: center;
+    text-shadow: 1px 1px 1px #333;
+    color: white;
+    font-size: 34px;
+    line-height: 50px;
+    top: 100px;
+}
+.text-inner h3 {
+    font-size: 50px;
+    line-height: 70px;
+    padding: 15px 0;
+}
+/* contact-addrs */
+.contact-addrs{
+    color: #fff;
+    background: #111;
+    padding: 60px 0;
+}
+.addr-box{
+    width: 1200px;
+    margin: 0 auto 20px;
+    height: 350px;
+    background-color: #333;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.contact-Map{
+    float: left;
+}
+.contact-Map-left{
+    float: left;
+    width: 390px;
+    padding: 60px 85px;
+}
+.contact-Map-left h2{
+    font-size: 22px;
+    color: #fff;
+    line-height: 50px;
+}
+.contact-Map-left p,.contact-Map-left p span{
+    font-size: 17px;
+    line-height: 50px;
+    color: #ccc;
+}

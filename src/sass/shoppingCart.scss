@@ -1,0 +1,231 @@
+.page-container {
+  width: 100%;
+  .cart-to-login {
+    border: 1px solid #ccc;
+    width: 1160px;
+    padding: 15px 20px;
+    margin: 30px auto;
+    color: #999;
+    font-size: 13px;
+    line-height: 18px;
+    h3 {
+      color: #f05124;
+      font-size: 16px;
+      line-height: 30px;
+    }
+    a {
+      padding: 3px;
+      margin: 0 2px;
+      color: #999;
+      border-bottom: rgb(139, 139, 139) solid 1px;
+    }
+  }
+  .cart-main {
+    .cart-title {
+      display: inline-block;
+      font-size: 28px;
+      font-weight: 600;
+      position: relative;
+      color: #000;
+      overflow: hidden;
+      vertical-align: middle;
+      position: relative;
+
+      .total-num {
+        font-style: normal;
+        color: #999;
+        margin-left: 10px;
+        display: inline-block;
+        line-height: 35px;
+        font-size: 12px;
+      }
+    }
+    &::before {
+      display: block;
+      content: "";
+      width: 55px;
+      height: 4px;
+      background-color: black;
+      top: 0;
+      left: 0;
+    }
+  }
+  .cart-empty {
+    text-align: center;
+    margin: 30px auto;
+    padding: 30px 0;
+    img {
+      width: 80px;
+      height: 70px;
+      display: inline-block;
+    }
+    p {
+      text-align: center;
+      line-height: 18px;
+      font-size: 13px;
+      color: #999;
+      padding: 3px 0px;
+      a {
+        color: #999;
+        border-bottom: #999 solid 1px;
+      }
+    }
+  }
+  .cart-foot {
+    position: fixed;
+    height: 70px;
+    overflow: hidden;
+    width: 100%;
+    min-width: 1280px;
+    border-top: 1px solid #5d5d5d;
+    bottom: 0;
+    left: 0;
+    background: #292929;
+    background: rgba(41, 41, 41, 0.9);
+    color: #fff;
+    .sum-main {
+      //   padding: 15px 0;
+      width: 1280px;
+      margin: 0 auto;
+      .sum-infos {
+        float: left;
+        width: 1000px;
+        margin-right: 20px;
+        margin-top: 15px;
+        line-height: 40px;
+        .sum-totalprice {
+          float: right;
+          span {
+            display: block;
+            line-height: 1;
+          }
+          .price {
+            font-size: 18px;
+            line-height: 30px;
+          }
+        }
+      }
+      .sum-to-settle {
+        float: left;
+        height: 40px;
+        padding: 0 30px;
+        border-left: 1px solid #999;
+        margin-top: 15px;
+        a {
+          display: block;
+          height: 40px;
+          width: 150px;
+          text-align: center;
+          background: #ed4025;
+          line-height: 40px;
+          font-size: 15px;
+          color: white;
+        }
+      }
+    }
+  }
+}
+.checkbox-label {
+  float: left;
+  font-size: 12px;
+  input {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 3px;
+  }
+  & > span {
+    margin-left: 10px;
+  }
+}
+.cart-table {
+  width: 100%;
+  .goods-item {
+    height: 140px;
+    border: 1px solid #ccc;
+    td {
+      border-bottom: 1px solid #c3c3c3;
+    }
+    .td-check {
+      width: 40px;
+      input {
+        width: 15px;
+        height: 15px;
+        position: relative;
+        top: 3px;
+        background-color: #fff;
+      }
+    }
+    .td-img {
+      width: 150px;
+      img {
+        display: block;
+        width: 100px;
+        margin: 0 auto;
+      }
+    }
+    .td-infos {
+      .td-infos-top {
+        .td-infos-top-l {
+          float: left;
+          h5 {
+            font-size: 18px;
+            color: #000;
+            font-weight: 600;
+            line-height: 30px;
+          }
+          p {
+            font-size: 13px;
+            line-height: 22px;
+            color: #777;
+          }
+        }
+        .td-infos-top-r {
+          float: right;
+          text-align: right;
+          .infos-price {
+            display: block;
+            color: #000;
+            font-size: 16px;
+          }
+          .infos-mktprice {
+            display: block;
+            color: #777;
+            font-size: 13px;
+            text-decoration: line-through;
+          }
+        }
+      }
+      .td-infos-bot {
+        .td-infos-bot-l {
+          float: left;
+          span {
+            float: left;
+            line-height: 28px;
+          }
+          button {
+            width: 26px;
+            height: 28px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            float: left;
+          }
+          .num-input {
+            outline: 0;
+            border: 1px solid #ccc;
+            margin-left: -1px;
+            margin-right: -1px;
+            height: 26px;
+            text-align: center;
+            width: 80px;
+            float: left;
+            vertical-align: middle;
+          }
+        }
+        .td-infos-bot-r {
+          float: right;
+        }
+      }
+    }
+  }
+}
