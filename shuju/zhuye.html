@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<script>
+		var uls = document.querySelectorAll(".goods-list");
+		var lis = Array.from(uls[0].querySelectorAll(".goods-item"));
+		var arr = [];
+		lis.forEach((item, idx) => {
+			var arrs = [];
+			Array.from(item.querySelector(".thumbs-list").querySelectorAll("li")).forEach((item, idx) => {
+				if (idx < 2) {
+					arrs.push(item.querySelector(".colorimg").getAttribute("src").split("?")[0]);
+				}
+			})
+			arr.push(
+				{
+					id1: idx,
+					imgsrc: item.querySelector(".loading").getAttribute("src").split("?")[0],
+					min1: arrs[0],
+					min2: arrs[1],
+					goodsName: item.querySelector(".goods-name").innerText,
+					goodsPrice: item.querySelector(".goods-price").querySelectorAll("span")[0].innerText.split("￥")[1],
+					mktPrice: item.querySelector(".goods-price").querySelectorAll("span")[1].innerText.split("￥")[1],
+				}
+			)
+		})
+		console.log(JSON.stringify(arr))
+	</script>
+	<script>
+		var uls = document.querySelectorAll(".goods-list");
+		var lis = Array.from(uls[1].querySelectorAll(".goods-item"));
+		var arr = [];
+		lis.forEach((item, idx) => {
+			var arrs = [];
+			Array.from(item.querySelector(".thumbs-list").querySelectorAll("li")).forEach((item, idx) => {
+				if (idx < 2) {
+					arrs.push(item.querySelector(".colorimg").getAttribute("src").split("?")[0]);
+				}
+			})
+			arr.push(
+				{
+					id2: idx,
+					imgsrc: item.querySelector(".loading").getAttribute("src").split("?")[0],
+					min1: arrs[0],
+					min2: arrs[1],
+					goodsName: item.querySelector(".goods-name").innerText,
+					goodsPrice: item.querySelector(".goods-price").querySelectorAll("span")[0].innerText.split("￥")[1],
+					mktPrice: item.querySelector(".goods-price").querySelectorAll("span")[1].innerText.split("￥")[1],
+				}
+			)
+		})
+		console.log(JSON.stringify(arr))
+	</script>
+</body>
+
+</html>

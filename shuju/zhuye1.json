@@ -1,0 +1,56 @@
+[
+	{
+		"id1": 0,
+		"imgsrc": "https://anta-cn-web.obs.myhwclouds.com/shopgoods/1/112025520/zt-112025520.jpg",
+		"min1": "https://anta-cn-web.obs.myhwclouds.com/shopgoods/1/112025520/112025520-8-1.jpg",
+		"min2": "https://anta-cn-web.obs.myhwclouds.com/shopgoods/1/112025520/112025520-5-1.jpg",
+		"goodsName": "安踏男鞋bubble泡泡跑鞋2020新款跑步系列",
+		"goodsPrice": "449.00",
+		"mktPrice": "469.00"
+	},
+	{
+		"id1": 1,
+		"imgsrc": "https://anta-cn-web.obs.myhwclouds.com/shopgoods/1/112011103/zt-112011103.jpg",
+		"min1": "https://anta-cn-web.obs.myhwclouds.com/goods/112011103/112011103-1-1.jpg",
+		"min2": "https://anta-cn-web.obs.myhwclouds.com/goods/112011103/112011103-2-1.jpg",
+		"goodsName": "安踏海沃德GH1男鞋篮球鞋2020新款篮球系列",
+		"goodsPrice": "499.00",
+		"mktPrice": "599.00"
+	},
+	{
+		"id1": 2,
+		"imgsrc": "https://anta-cn-web.obs.myhwclouds.com/shopgoods/1/912018842/zt-912018842.jpg",
+		"min1": "https://anta-cn-web.obs.myhwclouds.com/goods/912018842/912018842-1-1.jpg",
+		"min2": "https://anta-cn-web.obs.myhwclouds.com/goods/912018842/912018842-2-1.jpg",
+		"goodsName": "安踏男鞋2020新款炙热男鞋运动鞋复古老爹鞋",
+		"goodsPrice": "389.00",
+		"mktPrice": "499.00"
+	},
+	{
+		"id1": 3,
+		"imgsrc": "https://anta-cn-web.obs.myhwclouds.com/shopgoods/1/112011606/zt-112011606.jpg",
+		"min1": "https://anta-cn-web.obs.myhwclouds.com/goods/112011606/112011606-1-1.jpg",
+		"min2": "https://anta-cn-web.obs.myhwclouds.com/goods/112011606/112011606-5-1.jpg",
+		"goodsName": "安踏男鞋UFO空域2代篮球鞋2020新款篮球系列ufo",
+		"goodsPrice": "289.00",
+		"mktPrice": "449.00"
+	},
+	{
+		"id1": 4,
+		"imgsrc": "https://anta-cn-web.obs.myhwclouds.com/shopgoods/1/112018882/zt-112018882.jpg",
+		"min1": "https://anta-cn-web.obs.myhwclouds.com/goods/112018882/112018882-1-1.jpg",
+		"min2": "https://anta-cn-web.obs.myhwclouds.com/goods/112018882/112018882-3-1.jpg",
+		"goodsName": "安踏男鞋老爹鞋休闲鞋2020新款生活系列",
+		"goodsPrice": "259.00",
+		"mktPrice": "399.00"
+	},
+	{
+		"id1": 5,
+		"imgsrc": "https://anta-cn-web.obs.myhwclouds.com/shopgoods/1/922017012/zt-922017012.jpg",
+		"min1": "https://anta-cn-web.obs.myhwclouds.com/goods/922017012/922017012-4-1.jpg",
+		"min2": "https://anta-cn-web.obs.myhwclouds.com/goods/922017012/922017012-2-1.jpg",
+		"goodsName": "安踏2020新品女款综训鞋休闲鞋老爹鞋",
+		"goodsPrice": "269.00",
+		"mktPrice": "419.00"
+	}
+]
