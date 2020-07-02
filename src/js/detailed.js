@@ -112,8 +112,21 @@ function pushCart() {
 		}
 	});
 }
+function clickGooodsList() {
+	$(".pro-container").on("click", ".pro-view-l img", function () {
+		$(this)
+			.parent()
+			.css("border", "2px solid rgb(88, 88, 88)")
+			.siblings("li")
+			.css("border", "1px solid #eee");
+		var bigSrc = $(".bigImg-box img").attr("src");
+		var thisScr = $(this).attr("src");
+		$(".bigImg-box img").attr("src", thisScr);
+	});
+}
 $(function () {
 	var urlId = location.search.split("=")[1];
 	toUpdateLists(urlId);
 	pushCart();
+	clickGooodsList();
 });

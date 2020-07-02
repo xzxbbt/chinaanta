@@ -3,7 +3,6 @@ function indexOneList() {
 		url: "./php/getGoodsList.php",
 		dataType: "JSON",
 	}).done((data) => {
-		console.log(data);
 		let str1 = data.map((item, idx) => {
 			if (idx < 6) {
 				item.rightImg = JSON.parse(item.rightImg);

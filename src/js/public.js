@@ -51,19 +51,29 @@ $(function () {
 		$(".huiyuan").html(getCookie("user"));
 	}
 });
+//显示nav下面的东西
+$(".sub-nav-panel,.header-nav nav ul>li").hover(
+	function () {
+		$(".sub-nav-panel").show();
+	},
+	function () {
+		$(".sub-nav-panel").hide();
+	}
+);
 
-/*  HTML格式
-	<div class="focus">
-	<ul>
-		<li><img src="upload/focus1.jpg" alt=""></li>
-		<li><img src="upload/focus2.jpg" alt=""></li>
-		<li><img src="upload/focus3.jpg" alt=""></li>
-	</ul>
-	<!-- 小圆点 -->
-	<ol>
-		<li class="current"></li>  current,为单独的小圆圈的样式(选中的)
-		<li></li>
-		<li></li>
-	</ol>
-	</div> */
-// 获取元素
+$(".sub-nav-panel,.header-nav nav ul>li").hover(
+	function () {
+		$(".sub-nav-panel").show();
+	},
+	function () {
+		$(".sub-nav-panel").hide();
+	}
+);
+$(".goodsBox").on("mouseenter", ".Goods-img>img", function () {
+	var bigSrc = $(this).parent().siblings("img").attr("src");
+	var thisScr = $(this).attr("src");
+	$(this).parent().siblings("img").attr("src", thisScr);
+	$(".goodsBox").on("mouseleave", ".Goods-img>img", function () {
+		$(this).parent().siblings("img").attr("src", bigSrc);
+	});
+});
