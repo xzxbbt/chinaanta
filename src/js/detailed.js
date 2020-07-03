@@ -124,9 +124,67 @@ function clickGooodsList() {
 		$(".bigImg-box img").attr("src", thisScr);
 	});
 }
+function goodsfangdajing() {
+	$(".pro-bigImg").on("mouseenter", ".zhe", function () {
+		var img = $(".bigImg-box img").attr("src");
+		$(".show-box").css("background-image", `url(${img})`);
+	});
+	$(".pro-bigImg").mouseenter(function () {
+		$(".zhe,.show-box").show();
+		let oMirrorBox = document.querySelector(".zhe");
+		let oBox = document.querySelector(".pro-bigImg");
+		let oShowBox = document.querySelector(".show-box");
+		let boxOffsetLeft = oBox.offsetLeft;
+		let boxOffsetTop = oBox.offsetTop;
+		let mirrorWidth = oMirrorBox.offsetWidth;
+		let mirrorHeight = oMirrorBox.offsetHeight;
+
+		// 给box绑定onmousemove事件，在鼠标移动时，让mirror-box跟着鼠标走。
+		oBox.addEventListener("mousemove", function (event) {
+			let e = event || window.event;
+
+			// 一、数据处理
+			// 1、计算oMirrorBox应该出现的位置(基于父盒子oBox的left和top)
+			// 鼠标距离页面的坐标的距离-大盒子距离页面的距离-放大镜的宽度的一半
+			let left1 = e.pageX - boxOffsetLeft - mirrorWidth / 2;
+			let top1 = e.pageY - boxOffsetTop - mirrorHeight / 2;
+
+			// 2、处理边界
+			if (left1 < 0) {
+				left1 = 0;
+			} else if (left1 + mirrorWidth > 643) {
+				left1 = 643 - mirrorWidth;
+			}
+
+			if (top1 < 0) {
+				top1 = 0;
+			} else if (top1 + mirrorHeight > 643) {
+				top1 = 643 - mirrorHeight;
+			}
+
+			// 二、外观呈现
+			// 1、移动放大镜
+			oMirrorBox.style.left = left1 + "px";
+			oMirrorBox.style.top = top1 + "px";
+
+			$(".show-box").css(
+				"background-position",
+				`-${left1 * 2}px -${top1 * 2}px`
+			);
+			// 2、改变show-box的背景图片的位置
+			//oShowBox.style.backgroundPosition = `-${left1 * 2}px -${top1 * 2}px`;
+		});
+	});
+	$(".pro-bigImg").mouseleave(function () {
+		$(".zhe,.show-box").hide();
+	});
+}
+
+//放大镜效果
 $(function () {
 	var urlId = location.search.split("=")[1];
 	toUpdateLists(urlId);
 	pushCart();
 	clickGooodsList();
+	goodsfangdajing();
 });

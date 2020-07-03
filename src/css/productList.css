@@ -12,6 +12,9 @@
 	width: 260px;
 	float: left;
 }
+.current {
+	transform: rotate(-90deg);
+}
 .list-wrp {
 	margin-left: 340px;
 }

@@ -34,6 +34,16 @@ function productList() {
 		$(".goodsList").html(str1);
 	});
 }
+//左边选择列表selectorList
+function selectorList() {
+	$(".selector-item").click(function () {
+		$(this).find(".selector-tag").slideToggle(100);
+		$(this).find(".selector-cate i").toggleClass("current");
+	});
+}
 $(function () {
+	//数据渲染productList
 	productList();
+	//左边选择列表selectorList
+	selectorList();
 });
